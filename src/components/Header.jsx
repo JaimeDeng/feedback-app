@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 function Header({ text }) {
   return (
     <header>
@@ -7,5 +8,14 @@ function Header({ text }) {
     </header>
   )
 }
+
+Header.defaultProps = {
+    text: 123,
+}
+
+Header.propTypes = {
+    text: PropTypes.string,
+}
+
 
 export default Header
